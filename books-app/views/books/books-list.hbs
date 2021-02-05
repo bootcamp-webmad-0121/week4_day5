@@ -1,0 +1,19 @@
+<div class="container">
+
+    <h1>Listado de publicaciones</h1>
+
+    <hr>
+
+    <ul>
+        {{#each books}}
+        <li>{{title}}
+            [<a href="/libros/detalles/{{id}}">ver</a>]
+            [<a href="/libros/editar/{{id}}">editar</a>]
+        </li>
+        {{/each}}
+    </ul>
+
+    {{#if error}}
+    <div class="error-message">{{error}}</div>
+    {{/if}}
+</div>
