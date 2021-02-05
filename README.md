@@ -31,7 +31,7 @@ Las dependecias `express-session` y `mongo-store` ofrecen configuraciones que pe
 - El método `req.session.destroy()` cierra la sesión.
 
 
-## Main points: *cuestom middlewares*
+## Main points: *custom middlewares*
 - Los *middlewares* son procesos intermedios que el servidor asume en cada petición previo a enrutarla.
 - En caso de los *custom middlewares*, es posible crearlos a través de un callback que, argumentado al método `.use()` de Express, tiene acceso a los objetos `res`, `req` y al método `next()`.
 - El método `next()` permite abandonar el middleware y continuar con la ejecución del script:
